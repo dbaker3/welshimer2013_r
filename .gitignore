@@ -1,6 +1,9 @@
 *.swp
 *.ignore
 *.sublime-*
+style.css
+ie.css
+ie6.css
 .DS_Store
 .sass-cache
 wp-config.php
