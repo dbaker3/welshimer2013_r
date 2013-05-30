@@ -1,0 +1,7 @@
+*.swp
+*.ignore
+*.sublime-*
+.DS_Store
+.sass-cache
+wp-config.php
+readme.html

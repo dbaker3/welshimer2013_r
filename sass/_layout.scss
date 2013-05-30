@@ -1,0 +1,231 @@
+/* Layout */
+* {
+	@include box-sizing('border-box');
+}
+html {
+	position:relative;
+	top:50px;
+	@media all and (min-width:800px) {
+		padding-top: 2em;
+		top:0;
+	}
+}
+body { //The whole page, placed on the body tag
+	background-image: $site-background-image;
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-width:320px;
+	max-width:960px;
+	position:relative;
+	@media all and (min-width:800px) {
+		min-width:900px;
+		margin:0 auto;
+	}
+}
+.site-header{
+	background-color:$green;
+	background-image:$header-background-image;
+	height:8.5em;
+	border-bottom:solid 2px $green;
+	@media all and (min-width:600px){
+		height:11em;
+	}
+	@media all and (min-width:800px){
+		height:16em;
+		@include border-top-radius(1em);
+		border: $default-border;
+	}
+}
+.milligan-logo {
+	width:29.5em;
+	margin:1em 0 0 0.5em;
+	float:left;
+	img {width:100%; height:auto;}
+	@media all and (min-width:600px){
+		width:40em;
+		margin:1em 0 0 1em;
+	}
+	@media all and (min-width:800px){
+		width:42em;
+		margin:2em 0 0 2em;
+	}
+}
+.welshimer-logo {
+	width:31.5em;
+	margin:0 0 0 0.5em;
+	float:left;
+	img {width:100%; height:auto;}
+	@media all and (min-width:600px){
+		width:46em;
+		margin:0 0 0 4em;
+	}
+	@media all and (min-width:800px){
+		width:52em;
+		margin:0 0 0 8em;
+	}
+}
+.social-menu {
+	float:left;
+	width:100%;
+	font-family:'icon-font';
+	z-index:999999;
+	ul {overflow:auto;}
+	li {
+		text-align:center;
+		width:33.3333%;
+		margin:0;
+		font-size:1.5em;
+		list-style:none;
+		float:left;
+	}
+	@media all and (min-width:800px){
+		width:10em;
+		position:absolute;
+			top:0;
+			right:0;;
+		ul {background-color: transparent !important;}
+		a {padding:0.075em 0.5em !important;
+			&:last-of-type{border-right:none !important;}}
+	}
+}
+#page { //The "page" as in, the content
+	background-color:$tan;
+	background-image:$page-background-image;
+	position:relative;
+	margin:0;
+	width:100%;
+	overflow:hidden;
+	@media all and (min-width:800px){
+		@include border-radius(1.5em);
+		@include box-shadow(0px 5px 20px -6px $black);
+		margin:0 2%;
+		max-width:960px;
+		overflow:visible;
+		width:96%;
+
+	}
+}
+.site-content {
+	float: left;
+	margin: 0 -22em 0 0;
+	width: 100%;
+	min-height: 55em;
+	@media all and (min-width:800px){
+		border:$default-border;
+		border-top:none;
+		border-bottom:none;
+	}
+}
+#content {
+	margin: 0 1em 0 0;
+	@media all and (min-width:800px){
+		margin:0 25em 0 0;
+	}
+}
+.widget-area { /* Sidebar 1 */
+	background:$dark-grey;
+	overflow: visible;
+	width: 22em;
+	position:absolute;
+		top:10em;
+		right:-21em;
+	@include box-shadow();
+	@include border-radius();
+	z-index:99;
+	@media all and (min-width:800px){
+		@include border-left-radius();
+		border:solid 1px $green;
+		right:-1%;
+		top:15em;
+	}
+}
+.side-expand {
+	display:block; visibility:visible;
+	position:absolute;
+		top:5%;
+		left:0;
+	width:1em;
+	height:90%;
+	background-color:$dark-grey;
+	border-right:solid 1px darken($dark-grey, 5%);
+	z-index:0;
+	@include box-shadow(black -5px 5px 6px -6px, lighten($dark-grey, 5%) -1px 0px 0px 0px inset);
+	&:after {
+		font-family:icon-font;
+		font-size:1em;
+		color:$light-grey;
+		content: "\e00e";
+		position:absolute;
+			top:49%;
+			left:2px;
+		vertical-align:center;
+		cursor:pointer;
+	}
+	&:hover:after {color:white;}
+	@media all and (min-width:800px) {
+		visibility:hidden;
+	}
+}
+.side-expand-open {
+	right:0;
+}
+.side-expand-open .side-expand:after {
+		content:"\e00f";
+}
+#tertiary { /* Sidebar 2 */
+	clear: right;
+}
+#colophon {
+	clear:both;
+}
+.site-footer {
+	clear:both;
+	width: 100%;
+	text-align:center;
+	height:12em;
+	border-top:$default-border;
+	border-bottom:$default-border;
+	@include box-shadow(0 0 5px 5px rgba($black, 0.25) inset);
+	@include background-image(linear-gradient(darken($dark-grey, 2%), lighten($dark-grey, 2%)));
+	@media all and (min-width:800px){
+		border:$default-border;
+		@include border-bottom-radius(1em);
+	}
+}
+
+.footer-logo {
+	margin:0.5em 0;
+	display:block;
+	width:100%;
+	text-align:center;
+	img {
+		max-width:10em;
+		min-width:5em;
+		}
+}
+
+.site-info {
+	display:block;
+	width:100%
+}
+.foot-noscript {
+	font-family: $font-default-family;
+	text-align:center;
+	background:rgba(red, 0.9);
+	color:$white;
+	font-size:1.5em;
+	height:4em;
+	padding:1em 0;
+	margin:0;
+	position:fixed;
+		bottom:0;
+		left:0;
+	width:100%;
+	z-index:999999999;
+	a {color:$white; font-weight:bold;text-decoration:underline;}
+}
+.old-ie-nojs {
+  display:none;
+}

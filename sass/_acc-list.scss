@@ -1,0 +1,94 @@
+/** Accordion List Styles **/
+
+.acc-list { //Main ul
+	margin:0.5em 0;
+	padding:0;
+	list-style:none;
+}
+
+.acc-list-category { // Category Header
+	display:block;
+	@include background-image(linear-gradient($green, darken($green, 10%)));
+	@include border-radius(5px);
+	@include box-shadow(rgba(white, 0.25) 0px 1px 1px 0px inset);
+	@include text-shadow(black -1px -1px 3px, rgba(#000061, 0.5) 0px 1px 1px);
+	background-color:$green;
+	border-left:solid 1px $grey-80;
+	color:$white;
+	cursor:pointer;
+	margin:0.25em 0;
+	padding:0.5em 2em 0.5em 0.5em;
+	position:relative;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	&:hover {
+		@include background-image(linear-gradient(darken($green, 2%), darken($green, 12%)));
+		color:$white;
+	}
+	&:after {
+		content:'\002b'; /*plus sign*/
+		position:absolute;
+			right:0.5em;
+		font-family:icon-font;
+	}
+}
+.open-item > a:after {
+		content:'\2013' !important; /*minus sign*/
+	}
+.acc-sublist{ // subordindate ul
+	border-left:solid 1px $green;
+	list-style:none;
+	margin:0;
+	padding:0;
+	li {
+		background:rgba($green, 0.05);
+		padding:0 0 0 3.5em;
+		position:relative;
+		&:before {
+			content:"";
+			display:inline-block;
+			width:3em;
+			height:26px;
+			position:absolute;
+				left:0.25em;
+				top:0;
+		}
+	}
+	li:nth-of-type(even) {
+		background:rgba($green, 0.2);
+	}
+	li:hover{
+		background:rgba($green, 0.4)
+	}
+	a {
+		color:$black;
+		text-decoration:none;
+	}
+}
+
+.mc:before {
+	@include main-sprite(mc);
+}
+.mctop_re:before {
+	@include main-sprite(mctop_re);
+}
+.top_re:before {
+	@include main-sprite(top_re);
+}
+
+.key span {
+	display:block;
+	margin:0.25em;
+	padding:0 0 0 2em;
+}
+
+.key-mc {
+	@include main-sprite(mc);
+}
+.key-topre {
+	@include main-sprite(smallstar);
+}
+.hidden {
+	display:none !important;
+}

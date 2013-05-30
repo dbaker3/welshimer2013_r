@@ -1,0 +1,61 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+
+
+.library-thing-container {
+	margin: 2em 0;
+	padding:1em;
+	width: 100%;
+	position: relative;
+}
+
+.lt-row {
+	clear:both;
+	display:block;
+	position:absolute;
+		top:0;
+		left:0;
+	width: 100%;
+	
+}
+
+.visible > .lt-cover {
+	-webkit-transform:rotateY(0deg);
+	-moz-transform:rotateY(0deg);
+	-o-transform:rotateY(0deg);
+	-ms-transform:rotateY(0deg);
+	transform:rotateY(0deg);
+	opacity:1;
+}
+
+.lt-cover {
+	padding:0;
+	margin: 0 2% 0 0;
+	float: left;
+
+	-webkit-transition: all 1s ease-in-out;
+  	-moz-transition: all 1s ease-in-out;
+  	-o-transition: all 1s ease-in-out;
+  	transition: all 1s ease-in-out;
+
+	-webkit-transform:rotateY(90deg);
+	-moz-transform:rotateY(90deg);
+	-o-transform:rotateY(90deg);
+	-ms-transform:rotateY(90deg);
+	transform:rotateY(90deg);
+
+	opacity:0;
+}
+
+
+.lt-cover img {
+	@include box-shadow(2px 2px 5px 0px rgba(0, 0, 0, 0.5));
+	@include border-radius(0.25em);
+	border:solid 1px #666633;
+	width:100% !important;
+}

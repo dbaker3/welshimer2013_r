@@ -1,0 +1,70 @@
+/* Typography */
+@font-face {
+    font-family: "icon-font";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg#icon-font") format("svg");
+  }
+
+.body-text {
+	color 			  :	  $font-default-color;
+  font-family   :   $font-default-family;
+  font-size     :   $font-default-size;
+  font-weight   :   $font-default-weight;
+	line-height 	: 	$font-default-lineheight;
+  padding: 1em;
+
+}
+
+.menu-text {
+	color 			  :	  $font-menu-color;
+  font-family   :   $font-menu-family;
+  font-size     :   $font-menu-size;
+  font-weight   :   $font-menu-weight;
+	line-height 	: 	$font-menu-lineheight;
+	@include text-shadow();
+}
+
+.widget-text {
+  color         :   $font-widget-color;
+  font-family   :   $font-widget-family;
+  font-size     :   $font-widget-size;
+  font-weight   :   $font-widget-weight;
+  line-height   :   $font-widget-lineheight;
+  padding: 0.5em 0.5em 0.5em 1.5em;
+  @media all and (min-width:800px){
+    padding: 0.5em;
+  }
+  @include text-shadow();
+}
+
+.alert {
+  @include border-radius();
+  font-size:0.8em;
+  padding:0.75em;
+}
+.success {
+    border:1px solid $green;
+    background-color:lighten($green, 57%);
+    a {color:$green}
+    &:focus {background-color:$white;}
+}
+.fail {
+    border:1px solid $red;
+    background-color:lighten($red, 57%);
+    a {color:$red}
+    &:focus {background-color:$white;}
+}
+
+.info {
+    border:1px solid $blue;
+    background-color:lighten($blue, 57%);
+    a {color:$blue}
+    &:focus {background-color:$white;}
+}
+
+.laylah { //This is a style for hiding text off the screen
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}

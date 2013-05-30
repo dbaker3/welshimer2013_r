@@ -1,0 +1,160 @@
+/* Form Elements */
+
+#eds {
+	height:auto;
+	margin:0;
+	padding:0;
+	position:relative;
+	#eds-search {
+		height:3em;
+		@media all and (min-width:600px){
+			margin:1em 0;
+		}
+	}
+	form {width:100%;}
+	img {
+		height:2em;
+		position:absolute;
+			top:0.25em;
+			left:0.25em;
+		z-index:1;
+
+	}//IMG
+	input {
+		@include box-sizing(border-box);
+		@include border-radius(5px);
+		border:solid 1px $black;
+		font-size:1.2em;
+		height:2em;
+		padding:0;
+		position:absolute;
+	}//Input
+	#ebscohostsearchtext {
+		top:0;
+		left:0;
+		padding:0 2.5em 0 4em;
+		margin:0 0 2em 0;
+		width:100%;
+	} //ebscohostsearchtext
+	#ebscohostsubmit {
+		background-color:$green;
+		@include border-left-radius(0);
+		@include text-shadow(black -1px -1px 3px, rgba(#000061, 0.5) 0px 1px 1px);
+  		@include background-image(linear-gradient($green, darken($green, 10%)));
+  		@include box-shadow(rgba(white, 0.25) 0px 1px 1px 0px inset);
+  		border-left:solid 1px $grey-80;
+		color:white;
+		font-family:icon-font;
+			top:0;
+			right:0;
+		width:2.5em;
+		z-index:1;
+		&:hover {
+			@include background-image(linear-gradient(darken($green, 2%), darken($green, 12%)));
+			cursor:pointer;
+		}
+	}//ebscohostsubmit
+	#eds-more-toggle {
+		display:none;//for now
+		border-top:solid 1px $green;
+		color:$green;
+		cursor:pointer;
+		padding:0.25em;
+		text-align:center;
+		&:hover {text-decoration:underline;}
+		&:before {
+			content:'More';
+			}
+		&:after {
+			content: '\25BE';/*small down triangle*/
+			}
+	}
+
+	.eds-more-toggle-open {
+			&:before {
+			content:'Less'!important;
+			}
+		&:after {
+			content: '\25B4'!important;/*small up triangle*/
+			}
+	}
+	#eds-more {
+		display:none;
+		height:2em;
+		position:relative;
+		input[type='checkbox'] {margin:0;padding:0;}
+		label {margin:0;padding:0;}
+		}//eds-more
+	.eds-more-open {
+		display:block !important;
+	}
+}
+
+
+#quicklinks {
+	overflow:auto;
+	margin:0;
+	padding:0;
+	ul {margin:0;padding:0;}
+	li {
+		list-style:none;
+	}
+	a {
+	text-decoration:none;
+	display:block;
+	@include background-image(linear-gradient($green, darken($green, 10%)));
+	@include border-radius(5px);
+	@include box-shadow(rgba(white, 0.25) 0px 1px 1px 0px inset);
+	@include text-shadow(black -1px -1px 3px, rgba(#000061, 0.5) 0px 1px 1px);
+	background-color:$green;
+	border-left:solid 1px $grey-80;
+	color:$white;
+	margin:0.25em 0;
+	padding:0.5em 2em 0.5em 3em;
+	position:relative;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	&:hover {
+		@include background-image(linear-gradient(darken($green, 2%), darken($green, 12%)));
+		color:$white;
+	}
+	&:after {
+		font-family:icon-font;
+		content:'\e016'; /*link*/
+		position:absolute;
+			right:0.5em;
+		}
+	&:before {
+		font-family:icon-font;
+		font-size:1.1em;
+		position:absolute;
+			left:1em;
+		}
+	}
+	.article > a:before {
+		content: "\e008";
+	}
+	.book > a:before {
+		content: "\e00a";
+	}
+	.search > a:before {
+		content: "\e001";
+	}
+	.web > a:before {
+		content: "\e015";
+	}
+	.image > a:before {
+		content: "\e00d";
+	}
+}
+
+.lib-thing {
+	padding: 3em 0;
+	height:16em;
+	width:100%;
+	overflow:hidden;
+	@media all and (max-width:600px){
+		display:none;
+	}
+}

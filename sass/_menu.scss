@@ -1,0 +1,330 @@
+/* =Menu
+----------------------------------------------- */
+	#mobile-menu-wrapper {
+		@include nav-gradient();
+		@include box-shadow();
+		height:50px;
+		color:$white;
+		display:block;
+		margin:0;
+		padding:0.5em 0.25em;
+		position:fixed;
+			top:0;
+			left:0;
+		text-decoration:none;
+		width:100%;
+		z-index:3;
+		@media all and (min-width:800px){
+			display:none;
+		}
+	}
+	#menu-toggle{
+		background-color: transparent;
+		border:none;
+		padding:0.5em;
+		height:3em;
+		cursor:pointer;
+	}
+	.icon-bar {
+	    background-color: #F5F5F5;
+	    @include border-radius();
+	    @include box-shadow();
+	    display: block;
+	    margin-bottom: 0.3em;
+	    height: 3px;
+	    width: 2em;
+	}
+#primary-menu{
+	.main-navigation {
+		font-size:1.25em;
+		display:none;
+		z-index:1;
+		}
+	.main-navigation ul {
+		margin:0;
+		padding:0;
+		background:$grey;
+	}
+	.main-navigation li {
+		list-style:none;
+	}
+	.main-navigation li a {
+		border-top:solid 1px lighten($grey, 7%);
+		border-left:solid 1px lighten($grey, 7%);
+		border-bottom:solid 1px darken($grey, 7%);
+		border-right:solid 1px darken($grey, 7%);
+		color:$white;
+		display:block;
+		padding:0.5em 1em;
+		text-decoration:none;
+	}
+	/* BEFORE and AFTERs for Link and Menu Classes */
+	.parent {
+		cursor:pointer;
+	}
+	.parent > a {
+		@media all and (min-width:800px){
+			padding-right:1em !important;
+		}
+		&:after {
+			float:right;
+			content:'\002b'; /*plus sign*/
+			@media all and (min-width:800px){
+					position:absolute;
+						top:0.6em;
+						right:0.25em;
+					padding-left:2px;
+				content: '\25BE'!important;/*small down triangle*/
+				}
+			}
+		}
+	.open-item > a:after {
+		content:'\2013'; /*minus sign*/
+	}
+
+	.main-navigation .sub-menu {
+		@include box-shadow();
+		display:none;
+		margin:0;
+	}
+	.main-navigation .sub-menu a {
+		background:$dark-grey;
+		border:none;
+		border-bottom:solid 1px $grey;
+		padding:0.5em 3em;
+		&:last-child{
+			border:none;
+		}
+	}
+	.main-navigation li:hover > a {
+		background:$green;
+		@include background-image(linear-gradient(lighten($green, 3%), darken($green, 3%)));
+		border-top:solid 1px lighten($green, 3%);
+		border-left:solid 1px lighten($green, 7%);
+		border-bottom:solid 1px darken($green, 7%);
+		border-right:solid 1px darken($green, 7%);
+	}
+	.display-toggle{
+		display:block !important;
+	}
+	.menu-icon {
+		position:relative;
+	}
+	.sub-menu .menu-icon a {padding:0.5em 0.5em 0.5em 2.5em !important;}
+	.menu-icon > a:before {
+		position:absolute;
+			top:0.35em;
+			left:15px;
+		font-family:icon-font;
+		font-size:1.25em;
+		text-align:center;
+		@media all and (min-width:800px){
+			top:0.4em;
+			left:0.5em;
+			font-size:1.25em;
+		}
+	}
+	.article > a:before {
+		content: "\e008";
+	}
+	.audio > a:before {
+		content: "\e009";
+	}
+	.book > a:before {
+		content: "\e00a";
+	}
+	.image > a:before {
+		content: "\e00d";
+	}
+	.search > a:before {
+		content: "\e001";
+	}
+	.sheetmusic > a:before {
+		content: "\e000";
+	}
+	.speech > a:before {
+		content: "\e017";
+	}
+	.video > a:before {
+		content: "\e00c";
+	}
+	.web > a:before {
+		content: "\e015";
+	}
+	.telephone > a:before {
+		content: "\e014";
+	}
+	.mail > a:before {
+		content: "\e002";
+	}
+	.mcsearch > a:before {
+		content:"\e001";
+	}
+	.mcsearch > a:after {
+		display:inline-block;
+		width:3em;
+		height:20px;
+		position:absolute;
+			right:1.5em;
+			top:0.5em;
+		content:"";
+		@include main-sprite(mcsearch);
+	}
+	.twitter > a:before {
+		content: "\e01c";
+	}
+	.facebook > a:before {
+		content: "\e019";
+	}
+	.wordpress > a:before {
+		content: "\e02a";
+	}
+
+	.div-below {
+		border-bottom:solid 1px darken(white, 90%);
+		@media all and (min-width:800px){
+			border-bottom:solid 1px darken(white, 85%);
+		}
+		& > a {padding-bottom:0.25em;}
+	}
+	.div-above {
+		border-top:solid 1px darken(white, 80%);
+		@media all and (min-width:800px){
+			border-top:solid 1px darken(white, 75%);
+		}
+		& > a {padding-top:0.25empx;}
+	}
+
+	@media all and (min-width:800px) {
+		.display-toggle{
+		}
+		.main-navigation {
+			@include nav-gradient();
+			@include box-shadow();
+			@include border-radius();
+			border:solid 1px $green;
+			clear: both;
+			display: block;
+			font-size:1em;
+			position:absolute;
+				top:9.5em;
+			width: 98%;
+			margin:0 1%;
+			z-index:99999;
+		}
+		.main-navigation ul {
+			list-style: none;
+			margin:0;
+			padding-left: 0;
+		}
+		.main-navigation li {
+			float: left;
+			position: relative;
+		}
+		.main-navigation li a {
+			@include nav-gradient();
+			border-left:solid 1px lighten($dark-grey, 1%);
+			border-right:solid 1px darken($dark-grey, 2%);
+			display: block;
+			padding:0.5em;
+			text-decoration: none;
+		}
+		.main-navigation .sub-menu {
+			@include border-bottom-radius();
+			@include transition();
+			border:solid 1px darken($grey, 5%);
+			border-top:none;
+			display: block;
+			float: left;
+			margin:2px 0 0 0;
+			opacity:0;
+			position: absolute;
+				top: 2.5em;
+				left: 0;
+			visibility:hidden;
+		}
+		.main-navigation .sub-menu a {
+			background:$grey;
+			border-top:$dark-grey;
+			padding:0.5em;
+		}
+		.main-navigation ul ul ul {
+		}
+		.main-navigation ul ul a {
+			width:18em;
+		}
+		.main-navigation ul ul li {
+		}
+		.main-navigation li:hover > a {
+		}
+		.main-navigation ul ul :hover > a {
+		}
+		.main-navigation ul ul a:hover {
+		}
+		.main-navigation ul li:hover > ul {
+			visibility:visible;
+			opacity:1;
+		}
+		.main-navigation li.current_page_item a,
+		.main-navigation li.current-menu-item a {
+		}
+
+	}
+}
+/** Secondary Menu **/
+.secondary-menu-main{
+	display:none;
+	@include main-sprite(loginbg);
+}
+.secondary-menu-select{
+	position:fixed;
+		top:1em;
+		right:1em;
+	z-index:4;
+
+	select {width:6.5em;}
+}
+
+@media all and (min-width:800px){
+	.secondary-menu-main {
+		display:block;
+		@include border-top-right-radius(0.5em);
+		width:32em;
+		position:absolute;
+		top:5px;
+		right:5px;
+		z-index:1;
+	}
+
+	.secondary-menu-main ul {
+		margin:0;
+		padding:0;
+	}
+	.secondary-menu-main li {
+			list-style:none;
+			float: right;
+			position: relative;
+			margin:0.5em 0.25em;
+			border-right:solid 2px $black;
+			&:first-child{border:none;}
+		}
+	.secondary-menu-main a {
+		color:transparent;
+		@include text-shadow(none);
+		display:block;
+		height:1.5em;
+	}
+	.secondary-menu-select {
+		display:none;
+	}
+}
+
+.main-login {
+	width:4em;
+}
+.main-news {
+	width:8em;
+}
+.main-home {
+	width:8.25em;
+}

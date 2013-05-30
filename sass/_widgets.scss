@@ -1,0 +1,109 @@
+/* =Widgets
+----------------------------------------------- */
+
+.widget {
+	margin: 0;
+}
+
+/* Search widget */
+#searchsubmit {
+	display: none;
+}
+#secondary aside {
+	a {
+		text-decoration:none;
+		@include link-colors(
+		$twitter-link-color-normal, 
+		$twitter-link-color-hover, 
+		$twitter-link-color-active,
+		$twitter-link-color-visited,
+		$twitter-link-color-focus);
+		&:hover {text-decoration:underline;}
+			}
+	padding:0.5em 0;
+	@include box-shadow(darken($dark-grey, 5%) 0 -1px 0 0 inset);
+	border-bottom:1px solid lighten($dark-grey, 5%);
+	&:first-child{
+		padding-top:0;
+	}
+	&:last-child{
+		@include box-shadow(none);
+		border-bottom:none;
+		padding-bottom:0;
+	}
+}
+.textwidget {
+	padding:0 1em 0 1.5em;
+}
+.contact-icon{
+	&:before {
+	margin-right:0.5em;
+	font-family:icon-font;
+	content:"\e002";
+	}
+}
+
+/*Twitter Widget */
+.twitter-icon{
+	&:before {
+	margin-right:0.5em;
+	font-family:icon-font;
+	content:"\e01c";
+	}
+}
+
+#twitter {
+	.tweet-text, .tweet-foot {padding:0 0 0.5em 0;}
+	.tweet-foot {font-size:0.9em;}
+	.tweet {
+		padding:0.5em 0 0 0;
+		border-top: 1px solid lighten($dark-grey, 5%);
+		border-bottom:1px solid darken($dark-grey, 5%);
+		&:last-of-type{
+			border-bottom:none;
+		}
+	}
+}
+.libraryh3lp {
+	margin:0;
+	padding:0;
+	a {&:hover{text-decoration:none;}}
+}
+
+.chat-icon{
+	&:before {
+	margin-right:0.5em;
+	font-family:icon-font;
+	content:"\e017";
+	}
+}
+
+.live-chat {
+	position:relative;
+ 	overflow:auto;
+ 	@include border-radius(5px);
+ 	@include box-shadow(rgba(white, 0.25) 0px 1px 1px 0px inset);
+	@include text-shadow(black -1px -1px 3px, rgba(#000061, 0.5) 0px 1px 1px);
+	background-color:$green;
+	border:solid 1px $grey-80;
+	color:$white;
+	margin:0.25em 0;
+	padding:0.5em 2em 0.5em 0.5em;
+  	width:100%;
+  	cursor:pointer;
+}
+.on {
+  @include background-image(linear-gradient($green, darken($green, 10%)));
+  &:hover {
+		@include background-image(linear-gradient(darken($green, 2%), darken($green, 12%)));
+		color:$white;
+	}
+}
+
+.off {
+  @include background-image(linear-gradient($red, darken($red, 10%)));
+  &:hover {
+		@include background-image(linear-gradient(darken($red, 2%), darken($red, 12%)));
+		color:$white;
+	}
+}

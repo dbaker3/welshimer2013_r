@@ -1,0 +1,208 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-untitled:before {
+	content: "\e000";
+}
+.icon-untitled-2:before {
+	content: "\e001";
+}
+.icon-untitled-3:before {
+	content: "\e002";
+}
+.icon-untitled-4:before {
+	content: "\e003";
+}
+.icon-untitled-5:before {
+	content: "\e004";
+}
+.icon-untitled-6:before {
+	content: "\e005";
+}
+.icon-untitled-7:before {
+	content: "\e006";
+}
+.icon-untitled-8:before {
+	content: "\e007";
+}
+.icon-untitled-9:before {
+	content: "\e008";
+}
+.icon-untitled-10:before {
+	content: "\e009";
+}
+.icon-untitled-11:before {
+	content: "\e00a";
+}
+.icon-untitled-12:before {
+	content: "\e00b";
+}
+.icon-untitled-13:before {
+	content: "\e00c";
+}
+.icon-untitled-14:before {
+	content: "\e00d";
+}
+.icon-untitled-15:before {
+	content: "\e00e";
+}
+.icon-untitled-16:before {
+	content: "\e00f";
+}
+.icon-untitled-17:before {
+	content: "\e010";
+}
+.icon-untitled-18:before {
+	content: "\e011";
+}
+.icon-untitled-19:before {
+	content: "\e012";
+}
+.icon-untitled-20:before {
+	content: "\e013";
+}
+.icon-untitled-21:before {
+	content: "\e014";
+}
+.icon-untitled-22:before {
+	content: "\e015";
+}
+.icon-untitled-23:before {
+	content: "\e016";
+}
+.icon-untitled-24:before {
+	content: "\e017";
+}
+.icon-facebook:before {
+	content: "\e018";
+}
+.icon-facebook-2:before {
+	content: "\e019";
+}
+.icon-facebook-3:before {
+	content: "\e01a";
+}
+.icon-facebook-4:before {
+	content: "\e01b";
+}
+.icon-twitter:before {
+	content: "\e01c";
+}
+.icon-twitter-2:before {
+	content: "\e01d";
+}
+.icon-twitter-3:before {
+	content: "\e01e";
+}
+.icon-feed:before {
+	content: "\e01f";
+}
+.icon-feed-2:before {
+	content: "\e020";
+}
+.icon-feed-3:before {
+	content: "\e021";
+}
+.icon-github:before {
+	content: "\e022";
+}
+.icon-github-2:before {
+	content: "\e023";
+}
+.icon-github-3:before {
+	content: "\e024";
+}
+.icon-github-4:before {
+	content: "\e025";
+}
+.icon-github-5:before {
+	content: "\e026";
+}
+.icon-github-6:before {
+	content: "\e027";
+}
+.icon-git:before {
+	content: "\e028";
+}
+.icon-github-7:before {
+	content: "\e029";
+}
+.icon-wordpress:before {
+	content: "\e02a";
+}
+.icon-wordpress-2:before {
+	content: "\e02b";
+}
+.icon-amazon:before {
+	content: "\e02c";
+}
+.icon-amazon-2:before {
+	content: "\e02d";
+}
+.icon-apple:before {
+	content: "\e02e";
+}
+.icon-finder:before {
+	content: "\e02f";
+}
+.icon-android:before {
+	content: "\e030";
+}
+.icon-windows:before {
+	content: "\e031";
+}
+.icon-skype:before {
+	content: "\e032";
+}
+.icon-html5:before {
+	content: "\e033";
+}
+.icon-html5-2:before {
+	content: "\e034";
+}
+.icon-css3:before {
+	content: "\e035";
+}
+.icon-chrome:before {
+	content: "\e036";
+}
+.icon-firefox:before {
+	content: "\e037";
+}
+.icon-IE:before {
+	content: "\e038";
+}
+.icon-opera:before {
+	content: "\e039";
+}
+.icon-safari:before {
+	content: "\e03a";
+}
+.icon-IcoMoon:before {
+	content: "\e03b";
+}

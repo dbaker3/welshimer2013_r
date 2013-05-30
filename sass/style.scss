@@ -1,0 +1,42 @@
+/*!
+Theme Name: Welshimer Unity
+Theme URI: http://github.com/jackweinbender/welshimerUnity
+Author: Jack Weinbender
+Author URI: http://github.com/jackweinbender/
+Description: The unified theme for PH Welshimer Memorial Library
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: MilliganCollege
+Text Domain: Welshimer
+
+This theme, like WordPress, is licensed under the GPL.
+Built on _s by Automattic
+*/
+ 
+ 
+@import "compass";
+
+@import "base";
+
+@import "reset";
+@import "global";
+@import "main-page";
+@import "menu";
+@import "content";
+@import "asides";
+@import "media";
+@import "navigation";
+@import "comments";
+@import "widgets";
+@import "layout";
+@import "typography";
+@import "forms";
+
+@import "acc-list";
+
+@import "logged-in";
+
+// widgets
+@import "ref-count";
+@import "libthing";
