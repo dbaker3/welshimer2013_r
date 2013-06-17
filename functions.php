@@ -78,20 +78,6 @@ function welshimer2013_setup() {
 	 */
 	add_theme_support( 'post-formats', array( 'aside', ) );
 
-	/**
-	 * Add Plugins
-	 */
-	require( get_template_directory() . '/inc/theme-plugins/twitter-cache-plugin-wordpress/twitter-cache-plugin.php' );
-	require( get_template_directory() . '/inc/theme-plugins/library-thing-plugin-wordpress/library-thing-plugin.php' );
-	require( get_template_directory() . '/inc/theme-plugins/ref-count/ref-count.php' );
-	require( get_template_directory() . '/inc/theme-plugins/ga-wordpress/ga.php' );
-
-	/**
-	 * Add Widgets
-	 */
-	require( get_template_directory() . '/inc/theme-widgets/contact-widget.php' );
-	require( get_template_directory() . '/inc/theme-widgets/libhelp-widget.php' );
-	require( get_template_directory() . '/inc/theme-widgets/twitter-widget.php' );
 }
 endif; // welshimer2013_setup
 add_action( 'after_setup_theme', 'welshimer2013_setup' );
