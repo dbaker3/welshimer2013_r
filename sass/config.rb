@@ -4,6 +4,6 @@ sass_dir = "."
 images_dir = "../images"
 fonts_dir = "../fonts"
 javascripts_dir = "../js"
-output_style = :expanded #:compressed
+output_style = :compressed
 relative_assets=true
 line_comments = false
