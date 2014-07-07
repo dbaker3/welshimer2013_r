@@ -1,10 +1,10 @@
 /*!
-Theme Name: Welshimer 2013 Refit
-Theme URI: http://github.com/jackweinbender/welshimerUnity
-Author: Jack Weinbender
-Author URI: http://github.com/jackweinbender/
-Description: The unified theme for PH Welshimer Memorial Library
-Version: 1.1
+Theme Name: Welshimer 2013 Refit 2014 Edition
+Theme URI: http://github.com/dbaker3/welshimer2013_r14
+Author: David Baker (Original project: Jack Weinbender)
+Author URI: http://github.com/dbaker3/
+Description: P.H. Welshimer Memorial Library
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: MilliganCollege
@@ -1283,7 +1283,7 @@ html {
 }
 
 body {
-  background-image: url('images/site-background.jpg?1404738973');
+  background-image: url('images/site-background.jpg?1404747146');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1301,7 +1301,7 @@ body {
 
 .site-header {
   background-color: #64672d;
-  background-image: url('images/header-background.png?1404738973');
+  background-image: url('images/header-background.png?1404747146');
   height: 8.5em;
   border-bottom: solid 2px #64672d;
 }
@@ -1404,7 +1404,7 @@ body {
 
 #page {
   background-color: #fdf3c9;
-  background-image: url('images/page-background.png?1404738973');
+  background-image: url('images/page-background.png?1404747146');
   position: relative;
   margin: 0;
   width: 100%;
@@ -1603,6 +1603,20 @@ body {
 
 .old-ie-nojs {
   display: none;
+}
+
+/* i.e. profile - Staff page */
+.profile {
+  display: block;
+  margin-top: 2em;
+}
+
+.profile p {
+  margin-bottom: 1em;
+}
+
+.profile img {
+  display: block;
 }
 
 /* Typography */
