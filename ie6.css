@@ -1,1 +1,4 @@
-.old-ie-nojs{display:block}
+/** ie6 stylesheet **/
+.old-ie-nojs {
+  display: block;
+}
