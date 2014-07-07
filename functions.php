@@ -123,6 +123,8 @@ function welshimer2013_before_sidebar() {
 }
 add_action('before_sidebar', 'welshimer2013_before_sidebar');
 
+// Stop WP from inserting <p>'s and <br>'s 
+remove_filter('the_content', 'wpautop');
 
 ////////////////////////////////
 // Shortcodes For Awesomeness //
