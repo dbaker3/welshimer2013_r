@@ -39,7 +39,7 @@
 }
 
 .alert {
-  @include border-radius();
+  /* @include border-radius(); */ /* FLATTEN */
   font-size:0.8em;
   padding:0.75em;
 }

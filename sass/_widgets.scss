@@ -81,7 +81,7 @@
 .live-chat {
 	position:relative;
  	overflow:auto;
- 	@include border-radius(5px);
+ 	/* @include border-radius(5px); */ /* FLATTEN */
  	@include box-shadow(rgba(white, 0.25) 0px 1px 1px 0px inset);
 	@include text-shadow(black -1px -1px 3px, rgba(#000061, 0.5) 0px 1px 1px);
 	background-color:$green;

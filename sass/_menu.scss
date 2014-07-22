@@ -27,7 +27,7 @@
 	}
 	.icon-bar {
 	    background-color: #F5F5F5;
-	    @include border-radius();
+	    /* @include border-radius(); */ /* FLATTEN */
 	    @include box-shadow();
 	    display: block;
 	    margin-bottom: 0.3em;
@@ -201,7 +201,7 @@
 		.main-navigation {
 			@include nav-gradient();
 			@include box-shadow();
-			@include border-radius();
+			/* @include border-radius(); */ /* FLATTEN */
 			border:solid 1px $green;
 			clear: both;
 			display: block;
@@ -230,7 +230,7 @@
 			text-decoration: none;
 		}
 		.main-navigation .sub-menu {
-			@include border-bottom-radius();
+			/* @include border-bottom-radius(); */ /* FLATTEN */
 			@include transition();
 			border:solid 1px darken($grey, 5%);
 			border-top:none;
@@ -288,7 +288,7 @@
 @media all and (min-width:800px){
 	.secondary-menu-main {
 		display:block;
-		@include border-top-right-radius(0.5em);
+		/* @include border-top-right-radius(0.5em); */ /* FLATTEN */
 		width:32em;
 		position:absolute;
 		top:5px;
