@@ -92,7 +92,7 @@ body { //The whole page, placed on the body tag
 }
 #page { //The "page" as in, the content
 	background-color:$tan;
-	background-image:$page-background-image;
+	/* background-image:$page-background-image; */ /* FLATTEN */
 	position:relative;
 	margin:0;
 	width:100%;

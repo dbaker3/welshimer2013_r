@@ -274,7 +274,7 @@
 /** Secondary Menu **/
 .secondary-menu-main{
 	display:none;
-	@include main-sprite(loginbg);
+	/* @include main-sprite(loginbg); */ /* FLATTEN */
 }
 .secondary-menu-select{
 	position:fixed;
