@@ -202,14 +202,14 @@
 			@include nav-gradient();
 			@include box-shadow();
 			/* @include border-radius(); */ /* FLATTEN */
-			border:solid 1px $green;
+			/* border:solid 1px $green; */ /* FLATTEN */
 			clear: both;
 			display: block;
 			font-size:1em;
 			position:absolute;
 				top:9.5em;
-			width: 98%;
-			margin:0 1%;
+			width: 97%;
+			margin:0 1.5%;
 			z-index:99999;
 		}
 		.main-navigation ul {
@@ -305,7 +305,7 @@
 			float: right;
 			position: relative;
 			margin:0.5em 0.25em;
-			border-right:solid 2px $black;
+			border-right:solid 2px $white;
 			&:first-child{border:none;}
 		}
 	.secondary-menu-main a {

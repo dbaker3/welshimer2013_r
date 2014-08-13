@@ -19,6 +19,7 @@ $light-grey	: $grey-10;
 
 $red		: #BF0000;
 $green		: #64672D;
+$darkgreen  : #4D4F22;
 $tan 		: #FDF3C9;
 $blue		: #049CDB;
 
@@ -90,7 +91,7 @@ $default-transition-delay    	: 100ms;
 
 /*Border Radius Default*/
 $default-border-radius			: 0.25em; 
-$default-border 				: solid 5px $green;
+$default-border 				: solid 2px $darkgreen;
 
 /*Background Images*/
 $site-background-image			: image-url("site-background.jpg");

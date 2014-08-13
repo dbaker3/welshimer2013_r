@@ -136,8 +136,8 @@ body { //The whole page, placed on the body tag
 	z-index:99;
 	@media all and (min-width:800px){
 		/* @include border-left-radius(); */ /* FLATTEN */
-		border:solid 1px $green;
-		right:-1%;
+		/* border:solid 1px $green; */ /* FLATTEN */
+		right:-0.5%;
 		top:15em;
 	}
 }
@@ -200,10 +200,10 @@ body { //The whole page, placed on the body tag
 	display:block;
 	width:100%;
 	text-align:center;
-	img {
+	/* img {
 		max-width:10em;
 		min-width:5em;
-		}
+		} */
 }
 
 .site-info {

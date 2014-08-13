@@ -15,7 +15,7 @@
 			<div class="footer-logo"><img src="<?php bloginfo( 'template_url' ); ?>/images/mc-logo.png" /></div>
 		<div class="site-info">
 			<?php do_action( 'welshimer2013_credits' ); ?>
-			Proudly powered by <a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'welshimer2013' ); ?>"><?php printf( __( '%s', 'welshimer2013' ), 'WordPress' ); ?></a>
+            Proudly powered by <a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'welshimer2013' ); ?>"><?php printf( __( '%s', 'welshimer2013' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer .site-footer -->
 </div><!-- #page .hfeed .site -->
