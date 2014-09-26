@@ -74,13 +74,13 @@ $twitter-link-color-focus		: lighten($green, 10%);
 $default-text-shadow-color		: rgba(black, 0.75);
 $default-text-shadow-h-offset	: 1px;
 $default-text-shadow-v-offset	: 1px;
-$default-text-shadow-blur		: 1px;
+$default-text-shadow-blur		: 0; /*1px;*/ /* FLATTEN */
 
 /*Box Shadow Defaults*/
 $default-box-shadow-color		: rgba(black, 0.75);
 $default-box-shadow-h-offset	: 0px;
 $default-box-shadow-v-offset	: 2px;
-$default-box-shadow-blur		: 8px;
+$default-box-shadow-blur		: 0; /*8px;*/ /* FLATTEN */
 $default-box-shadow-spread		: -1px;
 $default-box-shadow-inset		: false;
 
