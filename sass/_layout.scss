@@ -34,7 +34,7 @@ body { //The whole page, placed on the body tag
 	}
 	@media all and (min-width:800px){
 		height:16em;
-		/* @include border-top-radius(1em); */ /* FLATTEN */
+		@include border-top-radius(2px); /* FLATTEN */
 		border: $default-border;
 	}
 }
@@ -98,7 +98,7 @@ body { //The whole page, placed on the body tag
 	width:100%;
 	overflow:hidden;
 	@media all and (min-width:800px){
-		/* @include border-radius(1.5em); */ /* FLATTEN */
+		@include border-radius(2px);  /* FLATTEN */
 		@include box-shadow(0px 5px 20px -6px $black);
 		margin:0 2%;
 		max-width:960px;
@@ -132,10 +132,10 @@ body { //The whole page, placed on the body tag
 		top:10em;
 		right:-21em;
 	@include box-shadow();
-	/* @include border-radius(); */ /* FLATTEN */
+	@include border-radius(); /* FLATTEN */
 	z-index:99;
 	@media all and (min-width:800px){
-		/* @include border-left-radius(); */ /* FLATTEN */
+		@include border-left-radius(); /* FLATTEN */
 		/* border:solid 1px $green; */ /* FLATTEN */
 		right:-0.5%;
 		top:15em;
@@ -191,7 +191,7 @@ body { //The whole page, placed on the body tag
 	@include background-image(linear-gradient(darken($dark-grey, 2%), lighten($dark-grey, 2%)));
 	@media all and (min-width:800px){
 		border:$default-border;
-		/* @include border-bottom-radius(1em); */ /* FLATTEN */
+		@include border-bottom-radius(2px); /* FLATTEN */
 	}
 }
 

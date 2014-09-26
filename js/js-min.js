@@ -74,7 +74,9 @@ adapt(device); //Do first adapt on load
 		jQuery( this ).toggleClass('eds-more-toggle-open');
 	});
 
-jQuery('.acc-sublist').addClass('hidden'); //For Onload
+jQuery('.acc-sublist').toggleClass('hidden'); //For Onload // dbaker 8-28-14 changed addClass method on this line to toggleClass method.
+                                                           // This will initially hide sublists on page load so my tabbed searchbox plugin will unhide 
+
 jQuery( '.acc-list-category' ).click( function() {
 		jQuery( this ).parent().children('.acc-sublist').toggleClass('hidden');
 		jQuery( this ).parent().toggleClass('open-item');

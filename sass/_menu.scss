@@ -27,7 +27,7 @@
 	}
 	.icon-bar {
 	    background-color: #F5F5F5;
-	    /* @include border-radius(); */ /* FLATTEN */
+	    @include border-radius();  /* FLATTEN */
 	    @include box-shadow();
 	    display: block;
 	    margin-bottom: 0.3em;

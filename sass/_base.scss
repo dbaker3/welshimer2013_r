@@ -91,7 +91,7 @@ $default-transition-function 	: ease-out;
 $default-transition-delay    	: 100ms;
 
 /*Border Radius Default*/
-$default-border-radius			: 0.25em; 
+$default-border-radius			: 2px /*0.25em*/; 
 $default-border 				: solid 2px $darkgreen;
 
 /*Background Images*/

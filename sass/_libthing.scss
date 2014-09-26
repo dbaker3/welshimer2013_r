@@ -55,7 +55,7 @@
 
 .lt-cover img {
 	@include box-shadow(2px 2px 5px 0px rgba(0, 0, 0, 0.5));
-	/* @include border-radius(0.25em); */ /* FLATTEN */
+	/* @include border-radius(2px);*/  /* FLATTEN */
 	border:solid 1px #666633;
 	width:100% !important;
 }
