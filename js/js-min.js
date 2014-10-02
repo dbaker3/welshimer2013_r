@@ -99,7 +99,7 @@ function adapt(deviceVar){ //console.log(deviceVar);
 		jQuery('#menu-navigation').addClass('display-toggle');
 	} else {
 		jQuery('.display-toggle').removeClass('display-toggle');
-		jQuery('.open-item').removeClass('open-item');
+		//jQuery('.open-item').removeClass('open-item');            // dbaker 10-2-14 commented so that my tabbed searchbox would display minus when jumping to topic.
 		jQuery('.side-expand-open').removeClass('side-expand-open')
 	}
 }
