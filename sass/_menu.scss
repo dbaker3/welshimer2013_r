@@ -305,14 +305,18 @@
 			float: right;
 			position: relative;
 			margin:0.5em 0.25em;
+         padding-right:0.5em;
 			border-right:solid 2px $white;
 			&:first-child{border:none;}
 		}
 	.secondary-menu-main a {
-		color:transparent;
+		color:$white;
+      font-weight:700;
+      text-decoration:none;
 		@include text-shadow(none);
 		display:block;
 		height:1.5em;
+      &:hover{color:$black;}
 	}
 	.secondary-menu-select {
 		display:none;
